@@ -14,7 +14,7 @@ public class ParcelableActivity extends AppCompatActivity {
     private EditText nameInput;
     private EditText ageInput;
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
