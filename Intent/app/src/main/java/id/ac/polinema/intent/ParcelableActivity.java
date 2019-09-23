@@ -13,8 +13,8 @@ public class ParcelableActivity extends AppCompatActivity {
     private EditText usernameInput;
     private EditText nameInput;
     private EditText ageInput;
-    User user;
 
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class ParcelableActivity extends AppCompatActivity {
         String name = nameInput.getText().toString();
         int age = Integer.parseInt(ageInput.getText().toString());
 
-        user = new User(username,name,age);
+        User user = new User(username,name,age);
 
         Intent intent = new Intent(this, ProfileParcelableActivity.class);
         intent.putExtra("user", user);
